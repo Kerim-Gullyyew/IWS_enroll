@@ -1,0 +1,61 @@
+/* custom-datepicker-styles.css */
+
+/* Common styles for both month and year dropdowns */
+.react-datepicker__month-select,
+.react-datepicker__year-select {
+  background-color: white; /* Change background color */
+  color: #333; /* Change text color */
+  border-radius: 6px; /* Rounded borders */
+  padding: 2px; /* Padding inside the dropdown */
+  font-size: 1rem; /* Font size */
+  cursor: pointer; /* Cursor pointer */
+}
+
+/* Styling the dropdowns when they are open/focused */
+.react-datepicker__month-select:focus,
+.react-datepicker__year-select:focus {
+  outline: none; /* Remove default focus outline */
+  border-color: #007bff; /* Border color when focused */
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Optional focus ring */
+}
+
+/* Optionally, style the options in the dropdowns */
+.react-datepicker__month-select option,
+.react-datepicker__year-select option {
+  background-color: white; /* Background of dropdown options */
+  color: black; /* Text color of options */
+}
+
+
+/* Common styles for both month and year dropdown lists */
+.react-datepicker__month-dropdown,
+.react-datepicker__year-dropdown {
+  background-color: #ffffff; /* White background for the dropdown list */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Drop shadow for a modern look */
+  border-radius: 4px; /* Rounded corners */
+  padding: 8px; /* Padding inside the dropdown list */
+  margin-top: 4px; /* Space between the dropdown button and the list */
+  width: auto; /* Width can be adjusted as needed */
+}
+
+/* Styling individual items in the dropdown lists */
+.react-datepicker__month-dropdown .react-datepicker__month-option,
+.react-datepicker__year-dropdown .react-datepicker__year-option {
+  padding: 8px; /* Padding for each option */
+  color: #333333; /* Color of the dropdown items */
+  font-size: 1rem; /* Font size of the dropdown items */
+  cursor: pointer; /* Cursor pointer to indicate clickable items */
+}
+
+/* Hover effect on items */
+.react-datepicker__month-dropdown .react-datepicker__month-option:hover,
+.react-datepicker__year-dropdown .react-datepicker__year-option:hover {
+  background-color: #f0f0f0; /* Light grey background on hover */
+}
+
+/* Styling for the selected item */
+.react-datepicker__month-dropdown .react-datepicker__month-option--selected,
+.react-datepicker__year-dropdown .react-datepicker__year-option--selected {
+  font-weight: bold; /* Bold font for the selected item */
+  color: #007bff; /* Highlight color for the selected item */
+}
